@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "637e0cdac46e780f5b28b4d9"
+  },
+  "type": 1,
+  "message": null,
+  "trend": "测试动态11",
+  "ofUser": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-23T12:06:50.838Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-23T12:06:50.838Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638233e84b8084b9269014c3"
+  },
+  "type": 2,
+  "message": "en......",
+  "trend": "123",
+  "ofUser": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-26T15:42:32.677Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-26T15:42:32.677Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638235424b8084b926901773"
+  },
+  "type": 2,
+  "message": "测试锁定",
+  "trend": "测试动态",
+  "ofUser": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-26T15:48:18.224Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-26T15:48:18.224Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cb9f6ade40fcef98657fc5"
+  },
+  "type": 1,
+  "message": null,
+  "trend": "<script>alert('hi')</script>",
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2023-01-21T08:16:42.149Z"
+  },
+  "updatedAt": {
+    "$date": "2023-01-21T08:16:42.149Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cba0a1de40fcef986580e1"
+  },
+  "type": 1,
+  "message": null,
+  "trend": "qwe",
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2023-01-21T08:21:53.714Z"
+  },
+  "updatedAt": {
+    "$date": "2023-01-21T08:21:53.714Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63de1a89ad434d2d8cb8fff5"
+  },
+  "type": 1,
+  "message": null,
+  "trend": "12312\n12321312",
+  "ofUser": {
+    "$oid": "638189442e2b53751e17d727"
+  },
+  "isChecked": false,
+  "createdAt": {
+    "$date": "2023-02-04T08:42:49.781Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-04T08:42:49.781Z"
+  },
+  "__v": 0
+}]

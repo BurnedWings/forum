@@ -1,0 +1,519 @@
+<template>
+  <div class="audit-container">
+    <div class="title">
+      <div class="switch-item">
+        <span>已过审文章</span>
+        <el-switch @change="changeOne" v-model="value1"></el-switch>
+      </div>
+      <div class="switch-item">
+        <span>已退回文章</span>
+        <el-switch @change="changeTwo" v-model="value2"></el-switch>
+      </div>
+    </div>
+    <el-table :data="tableData" class="status-table" style="width: 100%;">
+      <el-table-column prop="createdAt" label="投稿日期" width="120">
+        <template slot-scope="scoped">
+          <span>{{$dayjs(scoped.row.createdAt).format("YYYY/MM/DD")}}</span>
+        </template>
+      </el-table-column>
+      <el-table-column prop="cover" label="文章封面" width="120">
+        <template slot-scope="scope">
+          <el-image
+            v-if="scope.row.cover"
+            style="width: 65%;"
+            :src="$myBaseUrl+scope.row.cover"
+            :preview-src-list="[$myBaseUrl+scope.row.cover]"
+          ></el-image>
+          <span v-else>无</span>
+        </template>
+      </el-table-column>
+      <el-table-column prop="bio" label="文章摘要" width="200">
+        <template slot-scope="scope">
+          <el-popover
+            placement="right"
+            width="250"
+            trigger="hover"
+            :content="scope.row.description"
+          >
+            <div slot="reference" class="bio-container">
+              <span>{{scope.row.description}}</span>
+            </div>
+          </el-popover>
+        </template>
+      </el-table-column>
+      <el-table-column prop="clicksCount" label="浏览次数" width="100"></el-table-column>
+      <el-table-column prop="favoritesCount" label="点赞次数" width="100"></el-table-column>
+      <el-table-column prop="commentsCount" label="评论条数" width="100"></el-table-column>
+      <el-table-column prop="image" label="作者头像" width="120">
+        <template slot-scope="scope">
+          <img @click="showDetailUser(scope.row.author._id)" style="width: 50%;border-radius: 50%;cursor: pointer;" :src="$myBaseUrl+scope.row.author.image" alt />
+        </template>
+      </el-table-column>
+      <el-table-column prop="author" label="作者昵称" width="120">
+        <template slot-scope="scope">{{scope.row.author.username}}</template>
+      </el-table-column>
+      <el-table-column prop="category" label="文章分类" width="120">
+        <template slot-scope="scope">{{scope.row.category.content}}</template>
+      </el-table-column>
+      <el-table-column class="doColumn" label="操作" width="180">
+        <template slot-scope="scope">
+          <el-button
+            style="margin-right:10px;"
+            @click="showDetail(scope.row)"
+            slot="reference"
+            size="mini"
+            type="primary"
+          >查看详情</el-button>
+          <el-popconfirm
+            v-if="scope.row.status===1"
+            @confirm="violateTheArticle(scope.row,scope.row.author._id)"
+            title="你确定要将该文章通过审核嘛"
+          >
+            <el-button style="margin-right:10px;" slot="reference" size="mini" type="success">通过</el-button>
+          </el-popconfirm>
+          <el-button
+            v-if="scope.row.status===0"
+            @click="returnTheArticle(scope.row,scope.row.author._id)"
+            size="mini"
+            type="danger"
+          >退回</el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+    <el-drawer
+      ref="myDrawer"
+      v-if="targetArticle"
+      title="文章详情"
+      class="my-drawer"
+      :visible.sync="drawer"
+      direction="ltr"
+      :size="920"
+    >
+      <div class="article-container">
+        <div class="title">{{targetArticle.title}}</div>
+        <div class="article-message">
+          <span>{{$dayjs(targetArticle.createdAt).format("YYYY/MM/DD HH:mm")}}</span>
+        </div>
+        <div class="author-info">
+          <img @click="showDetailUser(targetArticle.author._id)" class="author-image" :src="$myBaseUrl+targetArticle.author.image" />
+          <div class="author-message">
+            <span class="author-name">{{targetArticle.author.username}}</span>
+            <br />
+            <span class="author-fans">粉丝:&nbsp;&nbsp;{{targetArticle.author.fansCount}}</span>
+            <span>文章:&nbsp;&nbsp;{{targetArticle.author.articleCount}}</span>
+          </div>
+        </div>
+        <div class="title-line"></div>
+        <div class="articleBody" v-html="targetArticle.body"></div>
+        <div class="article-tag">
+          <span v-for="(tag,index) in targetArticle.tagList">#{{tag}}</span>
+        </div>
+        <div class="bottom-line"></div>
+      </div>
+    </el-drawer>
+    <el-dialog
+      title="请输入具体描述"
+      :visible.sync="dialogVisible"
+      width="30%"
+      :before-close="handleClose"
+      close="my-return-box"
+      :modal-append-to-body="false"
+    >
+      <el-input
+        type="textarea"
+        :rows="6"
+        ref="messageBox"
+        resize="none"
+        maxlength="160"
+        show-word-limit
+        placeholder="请输入内容"
+        v-model="textarea"
+      ></el-input>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="dialogVisible = false">取 消</el-button>
+        <el-button type="danger" @click="backTheArticle">确定退回</el-button>
+      </span>
+    </el-dialog>
+    <el-pagination
+      class="my-pagination"
+      background
+      :hide-on-single-page="true"
+      layout="prev, pager, next"
+      :page-size="6"
+      :total="totalPage"
+      @current-change="handleCurrentChange"
+    ></el-pagination>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ChangeStatus",
+  data() {
+    return {
+      value1: true,
+      value2: false,
+      drawer: false,
+      dialogVisible: false,
+      textarea: "",
+      tableData: [],
+      totalPage: 0,
+      targetArticle: null,
+      backArticle: null,
+      backUser: null,
+      currentPage: null
+    };
+  },
+  methods: {
+     showDetailUser(userId){
+      this.$router.push({
+        name:'UserStatus',
+        params:{
+          userId
+        }
+      })
+    },
+    changeOne(val) {
+      if (val) {
+        this.currentPage = null;
+        this.value2 = false;
+        this.getAuditArticle();
+      } else {
+        this.value2 = true;
+        this.getBackArticle();
+      }
+    },
+    changeTwo(val) {
+      if (val) {
+        this.currentPage = null;
+        this.value1 = false;
+        this.getBackArticle();
+        // this.getUserInfoList(1);
+      } else {
+        this.value1 = true;
+        this.getAuditArticle();
+      }
+    },
+    showDetail(val) {
+      this.targetArticle = val;
+      this.drawer = true;
+      this.$nextTick(() => {
+        document.querySelector(".el-drawer__body").scrollTo(0, 0);
+      });
+    },
+    //通过审核
+    async violateTheArticle(article, ofUser) {
+      const ret = await this.$API.article.auditTheArticle(article._id);
+      if (ret.code === 200) {
+        this.getBackArticle();
+        await this.$API.article.articleStatusMessage({
+          type: 1,
+          article:article.title,
+          ofUser
+        });
+      }
+    },
+    returnTheArticle(article, ofUser) {
+      this.backArticle = article;
+      this.backUser = ofUser;
+      this.dialogVisible = true;
+      this.$nextTick(() => {
+        this.$refs.messageBox.focus();
+      });
+    },
+    handleClose() {
+      this.dialogVisible = false;
+      this.backArticle = null;
+      this.backUser = null;
+      this.textarea = "";
+    },
+    //获取已审核文章
+    async getAuditArticle() {
+      let ret;
+      if (this.currentPage) {
+        if (this.tableData.length === 1 && this.currentPage != 1) {
+          ret = await this.$API.article.getAuditArticle(this.currentPage - 1);
+        } else {
+          ret = await this.$API.article.getAuditArticle(this.currentPage);
+        }
+      } else {
+        ret = await this.$API.article.getAuditArticle();
+      }
+      if (ret.code === 200) {
+        this.tableData = ret.articleList;
+        this.totalPage = ret.totalCount;
+      }
+    },
+    //分页事件
+    async handleCurrentChange(val) {
+      this.currentPage = val;
+      let ret;
+      if (this.value1) {
+        ret = await this.$API.article.getAuditArticle(val);
+      } else {
+        ret = await this.$API.article.getBackArticle(val);
+      }
+      if (ret.code === 200) {
+        this.tableData = ret.articleList;
+      }
+    },
+    //查询已退回文章
+    async getBackArticle() {
+      let ret;
+      if (this.currentPage) {
+        if (this.tableData.length === 1 && this.currentPage != 1) {
+          ret = await this.$API.article.getBackArticle(this.currentPage - 1);
+        } else {
+          ret = await this.$API.article.getBackArticle(this.currentPage);
+        }
+      } else {
+        ret = await this.$API.article.getBackArticle();
+      }
+      if (ret.code === 200) {
+        this.tableData = ret.articleList;
+        this.totalPage = ret.totalCount;
+      }
+    },
+    //退回文章
+    async backTheArticle() {
+      const article = this.backArticle;
+      const ofUser = this.backUser;
+      const ret = await this.$API.article.backTheArticle(article._id);
+      if (ret.code === 200) {
+        this.getAuditArticle();
+        const message = this.textarea.trim()
+        await this.$API.article.articleStatusMessage({
+          type: 2,
+          article:article.title,
+          ofUser,
+          message
+        });
+        this.$message({
+          type: "success",
+          message: "退回成功~"
+        });
+      }
+      this.backArticle = null;
+      this.backUser = null;
+      this.textarea = "";
+      this.dialogVisible = false;
+    },
+    //获取单条文章
+    async getCurrentArticle() {
+      const ret = await this.$API.article.getCurrentArticle(
+        this.$route.params.articleId
+      );
+      if (ret.code === 200) {
+        if (ret.articleList[0]) {
+          this.tableData = ret.articleList;
+        }else{
+          this.tableData = []
+        }
+
+        this.totalPage = ret.totalCount;
+      }
+    }
+  },
+  mounted() {
+    if (!this.$route.params.articleId) {
+      this.getAuditArticle();
+    } else {
+      this.getCurrentArticle();
+    }
+  }
+};
+</script>
+<style lang='less'>
+.el-drawer__body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.articleBody {
+  img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+  }
+}
+</style>
+<style lang="less" scoped>
+.audit-container {
+  .title {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    .switch-item {
+      margin-left: 9px;
+      display: inline-block;
+      margin-right: 20px;
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        color: #909399;
+      }
+    }
+  }
+  .status-table {
+    .bio-container {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      display: -webkit-box;
+    }
+  }
+  .my-drawer {
+    .article-container {
+      transition: all 0.5s;
+      width: 750px;
+      min-height: 200px;
+      margin-left: 80px;
+      padding-bottom: 10px;
+      border-radius: 0.5rem;
+      box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+      .title {
+        color: rgba(0, 0, 0, 0.763);
+        font-size: 25px;
+        font-weight: 550;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 80px;
+        padding-right: 90px;
+      }
+      .article-message {
+        margin-top: 15px;
+        padding: 0 90px;
+        span {
+          margin-right: 18px;
+        }
+      }
+      .author-info {
+        padding: 0 90px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        .author-image {
+          float: left;
+          width: 44px;
+          border-radius: 50%;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .author-message {
+          float: left;
+          width: 300px;
+          font-size: 15px;
+          margin-top: 7px;
+          .author-fans {
+            margin-right: 20px;
+          }
+          .author-name {
+            cursor: pointer;
+          }
+        }
+      }
+      .author-info:after {
+        /*伪元素是行内元素 正常浏览器清除浮动方法*/
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+
+      .title-line {
+        width: 90%;
+        background-color: rgb(131, 130, 130);
+        height: 1px;
+        margin: 0 auto;
+        transform: scaleY(0.7);
+        margin-bottom: 20px;
+      }
+      .articleBody {
+        width: 83%;
+        margin: 0 auto;
+        font-size: 17px;
+        padding: 20px 13px;
+        // transform: scale(0.7, 0.7);
+      }
+      .article-tag {
+        width: 80.5%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-size: 13px;
+        font-style: italic;
+        span {
+          margin-right: 10px;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+        span:hover {
+          color: var(--theme_search_input_blue_color);
+        }
+      }
+
+      .bottom-line {
+        width: 90%;
+        background-color: rgb(131, 130, 130);
+        height: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+
+        transform: scaleY(0.7);
+        margin-bottom: 30px;
+      }
+
+      .share-box {
+        width: 190px;
+        text-align: center;
+        margin-left: 85px;
+        float: left;
+        .box-container {
+          text-align: center;
+          padding: 0;
+          font-size: 15px;
+          .share-box-item {
+            display: inline;
+            margin-left: 7px;
+            transition: color 0.2s;
+            cursor: pointer;
+            i {
+              font-size: 18px;
+            }
+          }
+          .share-box-item:hover {
+            color: var(--theme_search_input_blue_color);
+          }
+        }
+      }
+
+      .article-advice {
+        width: 150px;
+        text-align: center;
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      // .articleBody :deep(img) {
+      //   margin-left: 50%;
+      //   transform: translateX(-50%);
+      //   max-width: 10%;
+      // }
+    }
+    .article-container:after {
+      /*伪元素是行内元素 正常浏览器清除浮动方法*/
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+
+  .my-pagination {
+    margin-left: 45%;
+    margin-top: 20px;
+  }
+}
+</style>

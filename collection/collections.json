@@ -1,0 +1,362 @@
+[{
+  "_id": {
+    "$oid": "635b81ee3b95a5f5471fcd45"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635b81ee3b95a5f5471fcd43"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T07:17:02.104Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T07:17:02.104Z"
+  },
+  "__v": 0,
+  "articleCount": 2
+},{
+  "_id": {
+    "$oid": "635b8342629a6ec87b7d5b2f"
+  },
+  "user": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635b8342629a6ec87b7d5b2d"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T07:22:42.590Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T07:22:42.590Z"
+  },
+  "__v": 0,
+  "articleCount": 1
+},{
+  "_id": {
+    "$oid": "635b834b629a6ec87b7d5b35"
+  },
+  "user": {
+    "$oid": "632880708e1317d507580edb"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635b834b629a6ec87b7d5b33"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T07:22:51.213Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T07:22:51.213Z"
+  },
+  "__v": 0,
+  "articleCount": 0
+},{
+  "_id": {
+    "$oid": "635b8353629a6ec87b7d5b3b"
+  },
+  "user": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635b8353629a6ec87b7d5b39"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T07:22:59.274Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T07:22:59.274Z"
+  },
+  "__v": 0,
+  "articleCount": 0
+},{
+  "_id": {
+    "$oid": "635b835a629a6ec87b7d5b41"
+  },
+  "user": {
+    "$oid": "6344e1e28fbd7cddc1ce4559"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635b835a629a6ec87b7d5b3f"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T07:23:06.112Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T07:23:06.112Z"
+  },
+  "__v": 0,
+  "articleCount": 0
+},{
+  "_id": {
+    "$oid": "635b8d95258fcc9973d5ee77"
+  },
+  "user": {
+    "$oid": "63565380fb75c2727961f70c"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635b8d95258fcc9973d5ee75"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T08:06:45.934Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T08:06:45.934Z"
+  },
+  "__v": 0,
+  "articleCount": 0
+},{
+  "_id": {
+    "$oid": "635bb92ecd587a64fca3c82d"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T11:12:46.741Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T11:12:46.741Z"
+  },
+  "__v": 0,
+  "articleCount": 4
+},{
+  "_id": {
+    "$oid": "635bf1d74d741e49e993084e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "游戏",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T15:14:31.026Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T15:14:31.026Z"
+  },
+  "__v": 0,
+  "articleCount": 2
+},{
+  "_id": {
+    "$oid": "635bf1ed4d741e49e9930852"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "动漫",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "createdAt": {
+    "$date": "2022-10-28T15:14:53.046Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-28T15:14:53.046Z"
+  },
+  "__v": 0,
+  "articleCount": 1
+},{
+  "_id": {
+    "$oid": "635cbe5ceab94542292bddb6"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "生活",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "createdAt": {
+    "$date": "2022-10-29T05:47:08.754Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-29T05:47:08.755Z"
+  },
+  "__v": 0,
+  "articleCount": 2
+},{
+  "_id": {
+    "$oid": "635cbe90eab94542292bddcc"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "学习",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "createdAt": {
+    "$date": "2022-10-29T05:48:00.650Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-29T05:48:00.650Z"
+  },
+  "__v": 0,
+  "articleCount": 0
+},{
+  "_id": {
+    "$oid": "635d15b69c530731657c59c3"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "话题收藏夹",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "createdAt": {
+    "$date": "2022-10-29T11:59:50.801Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-29T11:59:50.801Z"
+  },
+  "__v": 0,
+  "articleCount": 1
+},{
+  "_id": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "collectionName": "测试文件夹",
+  "userCollection": {
+    "$oid": "635bb92ecd587a64fca3c82b"
+  },
+  "articleCount": 8,
+  "createdAt": {
+    "$date": "2022-10-31T06:49:53.657Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T06:49:53.657Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635f875621e04bb19ba9d181"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "collectionName": "校园",
+  "userCollection": {
+    "$oid": "635b81ee3b95a5f5471fcd43"
+  },
+  "articleCount": 1,
+  "createdAt": {
+    "$date": "2022-10-31T08:29:10.805Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T08:29:10.805Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636f1fd38abf073402c35583"
+  },
+  "user": {
+    "$oid": "636f1fd38abf073402c3557f"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "636f1fd38abf073402c35581"
+  },
+  "articleCount": 0,
+  "createdAt": {
+    "$date": "2022-11-12T04:23:47.520Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-12T04:23:47.520Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636f203721cb135846b45e91"
+  },
+  "user": {
+    "$oid": "636f203721cb135846b45e8d"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "636f203721cb135846b45e8f"
+  },
+  "articleCount": 0,
+  "createdAt": {
+    "$date": "2022-11-12T04:25:27.399Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-12T04:25:27.399Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6371f06916ef67be6bce3c8f"
+  },
+  "user": {
+    "$oid": "6371f06916ef67be6bce3c8b"
+  },
+  "collectionName": "默认收藏夹",
+  "userCollection": {
+    "$oid": "6371f06916ef67be6bce3c8d"
+  },
+  "articleCount": 0,
+  "createdAt": {
+    "$date": "2022-11-14T07:38:17.762Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-14T07:38:17.762Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63731f49f02562adf323fc69"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "collectionName": "游戏",
+  "userCollection": {
+    "$oid": "635b81ee3b95a5f5471fcd43"
+  },
+  "articleCount": 0,
+  "createdAt": {
+    "$date": "2022-11-15T05:10:33.143Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-15T05:10:33.143Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63884da3043361c1b4dbe453"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "collectionName": "123",
+  "userCollection": {
+    "$oid": "635b81ee3b95a5f5471fcd43"
+  },
+  "articleCount": 0,
+  "createdAt": {
+    "$date": "2022-12-01T06:45:55.951Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-01T06:45:55.951Z"
+  },
+  "__v": 0
+}]

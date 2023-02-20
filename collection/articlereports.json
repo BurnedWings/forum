@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6379dff0a76462499f04ad16"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "type": {
+    "$oid": "6378a0c68fb6f6b4e694fcaa"
+  },
+  "message": "测试举报adas",
+  "article": {
+    "$oid": "635de8b9372b26babb450c0c"
+  },
+  "ofUser": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "createdAt": {
+    "$date": "2022-11-20T08:06:08.942Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-20T08:06:08.942Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637b170a19b3b1ef29247c1e"
+  },
+  "user": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "type": {
+    "$oid": "6378a0c68fb6f6b4e694fcaa"
+  },
+  "message": "举办测试",
+  "article": {
+    "$oid": "636f6a308a4f0298535cef82"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "createdAt": {
+    "$date": "2022-11-21T06:13:30.534Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-21T06:13:30.534Z"
+  },
+  "__v": 0
+}]

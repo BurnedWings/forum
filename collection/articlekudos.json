@@ -1,0 +1,211 @@
+[{
+  "_id": {
+    "$oid": "636df12b056265afb66b729e"
+  },
+  "article": {
+    "$oid": "63620e3574015d2a724e45d7"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-11T06:52:27.819Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-11T06:52:27.819Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636f215a21cb135846b45f88"
+  },
+  "article": {
+    "$oid": "635a7e3c1ce62a54f2f1277e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofUser": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-12T04:30:18.774Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-12T04:30:18.774Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636f3b7c21cb135846b46bb5"
+  },
+  "article": {
+    "$oid": "635e28ea6160cbd6a741fa78"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-12T06:21:48.514Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-12T06:21:48.514Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6370e8cbf6efb3eaa9197e2e"
+  },
+  "article": {
+    "$oid": "636f6a308a4f0298535cef82"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-13T12:53:31.278Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-13T12:53:31.278Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63737c49ca3eaa9df51a67d4"
+  },
+  "article": {
+    "$oid": "636f6a308a4f0298535cef82"
+  },
+  "user": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-15T11:47:21.689Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-15T11:47:21.689Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637731c6476215d468c572c6"
+  },
+  "article": {
+    "$oid": "635de8b9372b26babb450c0c"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofUser": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-18T07:18:30.044Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-18T07:18:30.044Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6379c4fac206ae7969de86ea"
+  },
+  "article": {
+    "$oid": "63620e3574015d2a724e45d7"
+  },
+  "user": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-20T06:11:06.665Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-20T06:11:06.665Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6380902817419a2641a4159b"
+  },
+  "article": {
+    "$oid": "635a7e3c1ce62a54f2f1277e"
+  },
+  "user": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "ofUser": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-25T09:51:36.011Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-25T09:51:36.011Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6389ae9209552c6717c8d40e"
+  },
+  "article": {
+    "$oid": "63620a3474015d2a724e458a"
+  },
+  "user": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-12-02T07:51:46.959Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-02T07:51:46.959Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639ed3e82dd19a3c69c92721"
+  },
+  "article": {
+    "$oid": "635b40d935760acbb0661f63"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofUser": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "isChecked": false,
+  "createdAt": {
+    "$date": "2022-12-18T08:48:40.285Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-18T08:48:40.285Z"
+  },
+  "__v": 0
+}]

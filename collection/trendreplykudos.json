@@ -1,0 +1,148 @@
+[{
+  "_id": {
+    "$oid": "636a17bb4fb1894f6b1929eb"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "trendReply": {
+    "$oid": "636a17b94fb1894f6b1929dc"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "createdAt": {
+    "$date": "2022-11-08T08:47:55.854Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-08T08:47:55.854Z"
+  },
+  "__v": 0,
+  "isChecked": true
+},{
+  "_id": {
+    "$oid": "636bb17debded6ea52041707"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "trendReply": {
+    "$oid": "636a4ba7a24ebfb08ffae513"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "createdAt": {
+    "$date": "2022-11-09T13:56:13.843Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-09T13:56:13.843Z"
+  },
+  "__v": 0,
+  "isChecked": true
+},{
+  "_id": {
+    "$oid": "636da5ba0758c760f458858c"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "trendReply": {
+    "$oid": "636d03da0027126dc93ef35d"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "createdAt": {
+    "$date": "2022-11-11T01:30:34.277Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-11T01:30:34.277Z"
+  },
+  "__v": 0,
+  "isChecked": true
+},{
+  "_id": {
+    "$oid": "636e16ce7c0a3d7020deeeb3"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "trendReply": {
+    "$oid": "636b918f4ff5c2a591b9e6dc"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-11T09:33:02.032Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-11T09:33:02.032Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63778608692dec13d659901d"
+  },
+  "user": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "trendReply": {
+    "$oid": "636e05de8e27914be02a0ee1"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-18T13:18:00.393Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-18T13:18:00.393Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6377860a692dec13d659903c"
+  },
+  "user": {
+    "$oid": "6328853e8e1317d507580f18"
+  },
+  "trendReply": {
+    "$oid": "636b918f4ff5c2a591b9e6dc"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-11-18T13:18:02.330Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-18T13:18:02.330Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63884d41043361c1b4dbe322"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "trendReply": {
+    "$oid": "636e06278e27914be02a1088"
+  },
+  "ofUser": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "isChecked": true,
+  "createdAt": {
+    "$date": "2022-12-01T06:44:17.376Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-01T06:44:17.376Z"
+  },
+  "__v": 0
+}]

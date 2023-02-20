@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "637ce01ad28888fd34f34728"
+  },
+  "image": "swipers/53bfd8318e7184b8757546200.png",
+  "description": "伊卡洛斯",
+  "clickCount": 21,
+  "createdAt": {
+    "$date": "2022-11-22T14:43:38.444Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-22T14:43:38.444Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637ce035d28888fd34f3472a"
+  },
+  "image": "swipers/53bfd8318e7184b8757546201.png",
+  "description": null,
+  "clickCount": 11,
+  "createdAt": {
+    "$date": "2022-11-22T14:44:05.684Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-22T14:44:05.684Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637ce058d28888fd34f3472c"
+  },
+  "image": "swipers/53bfd8318e7184b8757546202.png",
+  "description": "C.C.",
+  "clickCount": 9,
+  "createdAt": {
+    "$date": "2022-11-22T14:44:40.798Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-22T14:44:40.798Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637ce066d28888fd34f3472e"
+  },
+  "image": "swipers/53bfd8318e7184b8757546203.png",
+  "description": null,
+  "clickCount": 13,
+  "createdAt": {
+    "$date": "2022-11-22T14:44:54.811Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-22T14:44:54.811Z"
+  },
+  "__v": 0
+}]

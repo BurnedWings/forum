@@ -1,0 +1,441 @@
+[{
+  "_id": {
+    "$oid": "635dd1a4c89a31666489b9e1"
+  },
+  "article": {
+    "$oid": "635a813d5d0fbb4865223959"
+  },
+  "ofCollection": {
+    "$oid": "635bf1d74d741e49e993084e"
+  },
+  "createdAt": {
+    "$date": "2022-10-30T01:21:40.496Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-30T01:21:40.496Z"
+  },
+  "__v": 0,
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  }
+},{
+  "_id": {
+    "$oid": "635dd1dac89a31666489b9e5"
+  },
+  "article": {
+    "$oid": "635b40d935760acbb0661f63"
+  },
+  "ofCollection": {
+    "$oid": "635bf1ed4d741e49e9930852"
+  },
+  "createdAt": {
+    "$date": "2022-10-30T01:22:34.565Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-30T01:22:34.565Z"
+  },
+  "__v": 0,
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  }
+},{
+  "_id": {
+    "$oid": "635ddc8a9a691454efff8aab"
+  },
+  "article": {
+    "$oid": "635c7e1e5499485a55dded3e"
+  },
+  "ofCollection": {
+    "$oid": "635cbe5ceab94542292bddb6"
+  },
+  "createdAt": {
+    "$date": "2022-10-30T02:08:10.829Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-30T02:08:10.829Z"
+  },
+  "__v": 0,
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  }
+},{
+  "_id": {
+    "$oid": "635e89f120fbf43fb8bb5348"
+  },
+  "article": {
+    "$oid": "635e28ea6160cbd6a741fa78"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635d15b69c530731657c59c3"
+  },
+  "createdAt": {
+    "$date": "2022-10-30T14:28:01.716Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-30T14:28:01.716Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635f1d7722581c4205bd0fb9"
+  },
+  "article": {
+    "$oid": "635a7e3c1ce62a54f2f1277e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635cbe5ceab94542292bddb6"
+  },
+  "createdAt": {
+    "$date": "2022-10-31T00:57:27.675Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T00:57:27.675Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635f205f22581c4205bd10c1"
+  },
+  "article": {
+    "$oid": "635de8b9372b26babb450c0c"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635bf1d74d741e49e993084e"
+  },
+  "createdAt": {
+    "$date": "2022-10-31T01:09:51.813Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T01:09:51.813Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635f8e2721e04bb19ba9d19f"
+  },
+  "article": {
+    "$oid": "635a7e3c1ce62a54f2f1277e"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "ofCollection": {
+    "$oid": "635f875621e04bb19ba9d181"
+  },
+  "createdAt": {
+    "$date": "2022-10-31T08:58:15.893Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T08:58:15.893Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fcbac8c1dab2cf2c5912b"
+  },
+  "article": {
+    "$oid": "635b40d935760acbb0661f63"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-10-31T13:20:44.119Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T13:20:44.119Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fcbb28c1dab2cf2c59147"
+  },
+  "article": {
+    "$oid": "635c7e1e5499485a55dded3e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-10-31T13:20:50.906Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T13:20:50.906Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fcbb88c1dab2cf2c59166"
+  },
+  "article": {
+    "$oid": "635de8b9372b26babb450c0c"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-10-31T13:20:56.090Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-31T13:20:56.090Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63608522190db235fd4ce71e"
+  },
+  "article": {
+    "$oid": "635a7e3c1ce62a54f2f1277e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635bb92ecd587a64fca3c82d"
+  },
+  "createdAt": {
+    "$date": "2022-11-01T02:32:02.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-01T02:32:02.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63608532190db235fd4ce75d"
+  },
+  "article": {
+    "$oid": "635b40d935760acbb0661f63"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635bb92ecd587a64fca3c82d"
+  },
+  "createdAt": {
+    "$date": "2022-11-01T02:32:18.067Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-01T02:32:18.067Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6360853c190db235fd4ce779"
+  },
+  "article": {
+    "$oid": "635c7e1e5499485a55dded3e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635bb92ecd587a64fca3c82d"
+  },
+  "createdAt": {
+    "$date": "2022-11-01T02:32:28.162Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-01T02:32:28.162Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6360854b190db235fd4ce79b"
+  },
+  "article": {
+    "$oid": "635de8b9372b26babb450c0c"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635bb92ecd587a64fca3c82d"
+  },
+  "createdAt": {
+    "$date": "2022-11-01T02:32:43.911Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-01T02:32:43.911Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6360895d190db235fd4ce9b6"
+  },
+  "article": {
+    "$oid": "635e28ea6160cbd6a741fa78"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-11-01T02:50:05.796Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-01T02:50:05.796Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636112f676ee112034747131"
+  },
+  "article": {
+    "$oid": "635a7e3c1ce62a54f2f1277e"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-11-01T12:37:10.508Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-01T12:37:10.508Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6362103074015d2a724e464d"
+  },
+  "article": {
+    "$oid": "6362075e74015d2a724e4560"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-11-02T06:37:36.469Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-02T06:37:36.469Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6362103b74015d2a724e466e"
+  },
+  "article": {
+    "$oid": "63620a3474015d2a724e458a"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-11-02T06:37:47.691Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-02T06:37:47.691Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6362104374015d2a724e468f"
+  },
+  "article": {
+    "$oid": "63620e3574015d2a724e45d7"
+  },
+  "user": {
+    "$oid": "635bb92ecd587a64fca3c829"
+  },
+  "ofCollection": {
+    "$oid": "635f70113c53e78db969ffd0"
+  },
+  "createdAt": {
+    "$date": "2022-11-02T06:37:55.477Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-02T06:37:55.477Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6384b813b27d18fafa081111"
+  },
+  "article": {
+    "$oid": "6362075e74015d2a724e4560"
+  },
+  "user": {
+    "$oid": "632879278e1317d507580e64"
+  },
+  "ofCollection": {
+    "$oid": "635b8342629a6ec87b7d5b2f"
+  },
+  "createdAt": {
+    "$date": "2022-11-28T13:30:59.497Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-28T13:30:59.497Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63884cec043361c1b4dbe2cb"
+  },
+  "article": {
+    "$oid": "6362075e74015d2a724e4560"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "ofCollection": {
+    "$oid": "635b81ee3b95a5f5471fcd45"
+  },
+  "createdAt": {
+    "$date": "2022-12-01T06:42:52.897Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-01T06:42:52.897Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e9f1d170dbb783c9558214"
+  },
+  "article": {
+    "$oid": "635b40d935760acbb0661f63"
+  },
+  "user": {
+    "$oid": "63286f4d8e1317d507580df7"
+  },
+  "ofCollection": {
+    "$oid": "635b81ee3b95a5f5471fcd45"
+  },
+  "createdAt": {
+    "$date": "2023-02-13T08:16:17.188Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T08:16:17.188Z"
+  },
+  "__v": 0
+}]

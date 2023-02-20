@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "6371a75531755e945fec000b"
+  },
+  "username": "小镇管理员",
+  "password": "7f3fe53290b7085eafca17cae50e0dc6",
+  "createdAt": {
+    "$date": "2022-11-14T02:26:29.866Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-14T02:26:29.866Z"
+  },
+  "__v": 0,
+  "image": "avatars/default.jpg",
+  "permissionsList": [
+    0
+  ],
+  "isSuper": true
+},{
+  "_id": {
+    "$oid": "638425a9297feab0251dc6af"
+  },
+  "username": "admin111",
+  "password": "7f3fe53290b7085eafca17cae50e0dc6",
+  "image": "avatars/66c86bc9da2d851ddb68f9f00.jpg",
+  "permissionsList": [
+    1
+  ],
+  "createdAt": {
+    "$date": "2022-11-28T03:06:17.648Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-28T03:06:17.648Z"
+  },
+  "__v": 4,
+  "isSuper": false
+},{
+  "_id": {
+    "$oid": "63847fadf6fcb2939c95c89b"
+  },
+  "username": "admin1",
+  "password": "7f3fe53290b7085eafca17cae50e0dc6",
+  "image": "avatars/561dd1ff4429f7f5d18e9f005.jpg",
+  "permissionsList": [
+    2,
+    1
+  ],
+  "isSuper": false,
+  "createdAt": {
+    "$date": "2022-11-28T09:30:21.302Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-28T09:30:21.302Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "6384843df6fcb2939c95c8a0"
+  },
+  "username": "admin2",
+  "password": "7f3fe53290b7085eafca17cae50e0dc6",
+  "image": "avatars/561dd1ff4429f7f5d18e9f003.jpg",
+  "permissionsList": [
+    3,
+    1
+  ],
+  "isSuper": false,
+  "createdAt": {
+    "$date": "2022-11-28T09:49:49.794Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-28T09:49:49.794Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "63848748f6fcb2939c95cd46"
+  },
+  "username": "admin3",
+  "password": "7f3fe53290b7085eafca17cae50e0dc6",
+  "image": "avatars/561dd1ff4429f7f5d18e9f006.jpg",
+  "permissionsList": [
+    4,
+    1
+  ],
+  "isSuper": false,
+  "createdAt": {
+    "$date": "2022-11-28T10:02:48.949Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-28T10:02:48.949Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6384b5a6b27d18fafa080dd7"
+  },
+  "username": "admin4",
+  "password": "7f3fe53290b7085eafca17cae50e0dc6",
+  "image": "avatars/4bcdd7a026c9c2ae8a9ded903.png",
+  "permissionsList": [
+    2,
+    4,
+    1
+  ],
+  "isSuper": false,
+  "createdAt": {
+    "$date": "2022-11-28T13:20:38.689Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-28T13:20:38.689Z"
+  },
+  "__v": 1
+}]

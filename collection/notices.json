@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "637f2a9f4c7d4be9455e20b2"
+  },
+  "title": "入站须知",
+  "message": "关于在本站需要遵守的一些规则",
+  "body": "<p>Hello各位，欢迎大家加入到空美町小镇这个大家庭中，希望大家能够友好交流，和睦相处，共同维护小镇“治安”(不是，是遵守社区秩序)，相互监督，共同进步，以下给各位奉上一张美图~~~</p><p><img src=\"http://localhost:3000/notices/41143f1e42c3da37a45d73e00.jpg\" contenteditable=\"false\"><br></p><p><br></p>",
+  "user": {
+    "$oid": "6371a75531755e945fec000b"
+  },
+  "isChecked": false,
+  "createdAt": {
+    "$date": "2022-11-24T08:26:07.048Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-24T08:26:07.048Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f2af64c7d4be9455e2129"
+  },
+  "title": "测试公告",
+  "message": "这是一条测试公告",
+  "body": "<p>hello各位，抱歉打扰到各位，这只是一条测试公告，大家不必在意~~~</p>",
+  "user": {
+    "$oid": "6371a75531755e945fec000b"
+  },
+  "isChecked": false,
+  "createdAt": {
+    "$date": "2022-11-24T08:27:34.317Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-24T08:27:34.317Z"
+  },
+  "__v": 0
+}]
